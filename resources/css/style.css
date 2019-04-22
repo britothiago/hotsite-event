@@ -73,6 +73,7 @@ header.main-head {
   width: 450px;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 .div-logo,
@@ -178,7 +179,6 @@ header.main-head {
 /********DESCRIPTION*********/
 .description h1 {
   font-size: 350%;
-  margin-top: 80px;
   text-align: center;
   font-weight: 100;
   padding: 0 90px;
@@ -295,7 +295,7 @@ info {
 }
 
 .logo-footer {
-  width: 150px;
+  width: 350px;
 }
 
 .copy-all {
