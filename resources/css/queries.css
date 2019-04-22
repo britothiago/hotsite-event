@@ -1,159 +1,151 @@
 @media only screen and (max-width: 1700px) {
-    .description h1 {
-        margin-top: -20px;
-    }
+  .description h1 {
+    margin-top: -20px;
+  }
 
-    .btn-reserve {
-        margin-top: -20px;
-    }
+  .btn-reserve {
+    margin-top: -20px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
-    .description h1 {
-        margin-top: -20px;
-    }
+  .description h1 {
+    margin-top: -20px;
+  }
 
-    .btn-reserve {
-        margin-top: -20px;
-    }
+  .btn-reserve {
+    margin-top: -20px;
+  }
 }
 
 @media only screen and (max-width: 1170px) {
-    .description h1 {
-        margin-top: -20px;
-    }
+  .description h1 {
+    margin-top: -20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .logo {
-        width: 350px;
-        margin-top: -30px;
-    }
+  .logo {
+    width: 350px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
 
-    .down {
-        display: none;
-    }
+  .down {
+    display: none;
+  }
 
-    /********DESCRIPTION*********/
-    .description h1 {
-        font-size: 250%;
-        margin-top: 100px;
-        text-align: center;
-        font-weight: 100;
-        padding: 0 90px;
-        font-family: "Raleway", sans-serif;
-    }
+  /********DESCRIPTION*********/
+  .description h1 {
+    font-size: 250%;
+  }
 
-    .description span {
-        font-weight: bold;
-        font-style: italic;
-    }
+  .main-head {
+    height: 80vh;
+  }
 
-    .main-head {
-        height: 80vh;
-    }
+  /*--------------------------*/
+  /* THE EVENT */
+  /*--------------------------*/
+  .title-event h2 {
+    font-size: 200%;
+  }
 
-    /*--------------------------*/
-    /* THE EVENT */
-    /*--------------------------*/
-    .title-event h2 {
-        font-size: 200%;
-    }
+  date {
+    margin-top: 70px;
+    font-size: 140%;
+  }
 
-    date {
-        margin-top: 70px;
-        font-size: 140%;
-    }
+  .each-event li {
+    font-size: 200%;
+  }
 
-    .each-event li {
-        font-size: 200%;
-    }
+  /*******FAQ********/
+  .title-event-info h2 {
+    font-size: 200%;
+    margin-bottom: 50px;
+  }
 
-    /*******FAQ********/
-    .title-event-info h2 {
-        font-size: 200%;
-        margin-bottom: 50px;
-    }
-
-    .logo-footer {
-        width: 150px;
-    }
+  .logo-footer {
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  /********DESCRIPTION*********/
+  .description h1 {
+    font-size: 150%;
+  }
 
-    /********DESCRIPTION*********/
-    .description h1 {
-        font-size: 150%;
-        margin-top: 50px;
-    }
+  .description span {
+    font-size: 80%;
+  }
 
-    .description span {
-        font-size: 80%;
-    }
+  .btn-reserve {
+    margin-top: 30px;
+  }
 
-    .btn-reserve {
-        margin-top: 70px;
-    }
+  .logo {
+    width: 350px;
+  }
 
-    .logo {
-        width: 350px;
-    }
-
-    .main-head {
-        height: 70vh;
-    }
+  .main-head {
+    height: 70vh;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .btn-reserve {
-        margin-top: 30px;
-    }
+  .btn-reserve {
+    margin-top: 30px;
+  }
 
-    /*******FAQ********/
-    .title-event-info h2 {
-        font-size: 180%;
-        margin-bottom: 50px;
-    }
+  /*******FAQ********/
+  .title-event-info h2 {
+    font-size: 180%;
+    margin-bottom: 50px;
+  }
 }
 
-@media only screen and (max-width: 412px) {
-    .description h1 {
-        font-size: 120%;
-        margin-top: 10px;
-    }
+@media only screen and (max-width: 414px) {
+  .description h1 {
+    font-size: 120%;
+  }
 
-    .description span {
-        font-size: 80%;
-    }
+  .description span {
+    font-size: 80%;
+  }
 
-    .btn-reserve {
-        margin-top: 10px;
-    }
-
-    .logo {
-        width: 200px;
-        margin-top: -10px;
-    }
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
 }
 
-@media only screen and (max-width: 360px) {
-    .description h1 {
-        font-size: 100%;
-        margin-top: 10px;
-        font-weight: bold;
-    }
+@media only screen and (max-width: 361px) {
+  .btn-reserve {
+    margin-top: 30px;
+  }
 
-    .description span {
-        font-size: 80%;
-    }
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
 
-    .btn-reserve {
-        margin-top: 30px;
-    }
+@media only screen and (max-width: 376px) {
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
 
-    .logo {
-        width: 200px;
-        margin-top: -10px;
-    }
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: -13px;
+  }
 }
