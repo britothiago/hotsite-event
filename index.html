@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="vendors/css/animate.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="vendors/autocomplete/content/styles.css">
-
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
 
@@ -20,14 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Muli:300,400|Anton|Raleway|Courgette" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Lobster" rel="stylesheet">
 
-    <script>
-        $(function() {
-            $("#datepicker").datepicker();
-        });
-        $(function() {
-            $("#datepicker2").datepicker();
-        });
-    </script>
 
     <title>HotSite</title>
 </head>
@@ -180,28 +167,4 @@
         </div>
     </footer>
 
-
-
-    <script type="text/javascript" src="vendors/autocomplete/scripts/jquery.mockjax.js"></script>
-    <script type="text/javascript" src="vendors/autocomplete/src/jquery.autocomplete.js"></script>
-    <script type="text/javascript" src="vendors/autocomplete/scripts/countries.js"></script>
-    <script type="text/javascript" src="vendors/autocomplete/scripts/demo.js"></script>
-
-    <script>
-        window.document.getElementById("Aereo").style.display = "block";
-
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 </body></html>
