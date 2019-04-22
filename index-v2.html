@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="vendors/autocomplete/content/styles.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Lobster" rel="stylesheet">
+
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+        $(function() {
+            $("#datepicker2").datepicker();
+        });
+    </script>
+
+
+    <title>HotSite</title>
+</head>
+
+<body>
+
+    <header class="main-head">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="main-nav col-md-4">
+                    <ul class="nav-left justify-content-md-center">
+                        <li><a href="#event">Evento</a></li>
+                        <li><a href="#city">Cidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="resources/img/logo-example.png" alt="Logo" class="logo justify-content-md-center">
+                </div>
+                <div class="main-nav col-md-4">
+                    <ul class="nav-right justify-content-md-center">
+                        <li><a href="#">Hotéis</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 description">
+                    <h1>Welcome to better event of all time!</h1>
+                </div>
+                <div class="col-md-4 description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusantium, velit optio maxime cum error excepturi qui, dicta ea libero repellendus explicabo.</p>
+                </div>
+            </div>
+            <div class="row row-form">
+                <div class="col-md-8">
+                    <div class="col-md-8">
+
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Aereo')"><span class="text-btn">Aéreo</span></button>
+                            <button class="tablinks" onclick="openCity(event, 'AereoHotel')"><span class="text-btn">Aéreo + Hotel</span></button>
+                        </div>
+
+                        <div id="Aereo" class="tabcontent">
+                            <form action="#">
+                                <div class="row radios">
+                                    <div class="col-md-1">
+                                        <input type="radio" class="form-control trip" name="trip" value="Ida e Volta" checked>
+                                    </div>
+                                    <div class="col-md-2 text-radio">
+                                        <span>Ida e volta</span>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <input type="radio" class="form-control trip" name="trip" value="Somente Ida">
+                                    </div>
+                                    <div class="col-md-3 text-radio">
+                                        <span>Somente ida</span>
+                                    </div>
+                                </div>
+                                <div class="row fromto">
+                                    <div class="col-md-1">
+                                        <label class="label-for">De</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="source-input">
+                                            <input type="text" name="origem" id="autocomplete-ajax" class="source" />
+
+                                            <input type="text" name="origem" id="autocomplete-ajax-x" disabled="disabled" class="source-complete" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 column-for">
+                                        <label class="label-for">Para</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="source-input-2">
+                                            <input type="text" name="destino" id="autocomplete-ajax-2" class="source" />
+                                            <input type="text" name="destino" id="autocomplete-ajax-x-2" disabled="disabled" class="source-complete" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row date-input">
+                                    <div class="col-md-1 go">
+                                        Ida
+                                    </div>
+                                    <div class="col-md-4 go-input">
+                                        <input type="text" class="go-input-input" id="datepicker">
+                                    </div>
+                                    <div class="col-md-1 back">
+                                        Volta
+                                    </div>
+                                    <div class="col-md-4 back-input">
+                                        <input type="text" class="go-input-input-2" id="datepicker2">
+                                    </div>
+                                </div>
+
+                                <div class="row adultkids">
+                                    <div class="col-md-2 adult">
+                                        Adultos
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" class="adult-input">
+                                    </div>
+                                    <div class="col-md-2 kids">
+                                        Crianças
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" class="kids-input">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn-get">Solicitar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="AereoHotel" class="tabcontent">
+                            <form action="#">
+                                <div class="row radios">
+                                    <div class="col-md-1">
+                                        <input type="radio" class="form-control trip" name="trip" value="Ida e Volta" checked>
+                                    </div>
+                                    <div class="col-md-2 text-radio">
+                                        <span>Ida e volta</span>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <input type="radio" class="form-control trip" name="trip" value="Somente Ida">
+                                    </div>
+                                    <div class="col-md-3 text-radio">
+                                        <span>Somente ida</span>
+                                    </div>
+                                </div>
+                                <div class="row fromto">
+                                    <div class="col-md-1">
+                                        <label class="label-for">De</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="source-input">
+                                            <input type="text" name="origem" id="autocomplete-ajax" class="source" />
+
+                                            <input type="text" name="origem" id="autocomplete-ajax-x" disabled="disabled" class="source-complete" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 column-for">
+                                        <label class="label-for">Para</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="source-input-2">
+                                            <input type="text" name="destino" id="autocomplete-ajax-2" class="source" />
+                                            <input type="text" name="destino" id="autocomplete-ajax-x-2" disabled="disabled" class="source-complete" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row date-input">
+                                    <div class="col-md-1 go">
+                                        Ida
+                                    </div>
+                                    <div class="col-md-4 go-input">
+                                        <input type="text" class="go-input-input" id="datepicker">
+                                    </div>
+                                    <div class="col-md-1 back">
+                                        Volta
+                                    </div>
+                                    <div class="col-md-4 back-input">
+                                        <input type="text" class="go-input-input-2" id="datepicker2">
+                                    </div>
+                                </div>
+
+                                <div class="row adultkids">
+                                    <div class="col-md-2 adult">
+                                        Adultos
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" class="adult-input">
+                                    </div>
+                                    <div class="col-md-2 kids">
+                                        Crianças
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="number" class="kids-input">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn-get">Solicitar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="container-fluid event" id="event">
+        <div class="row col-md-12 title-event justify-content-md-center">
+            <h2>O que esperar do evento?</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="resources/img/event-1.jpg" class="img-event" alt="">
+            </div>
+            <div class="col-md-6 description-event">
+                <div class="row d-event-one">Amazing</div>
+                <div class="row d-event-two">Awesome</div>
+                <div class="row d-event-four">Great</div>
+                <div class="row d-event-three">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ipsa eius id excepturi voluptatum soluta laborum nulla quia aspernatur unde facilis, fugit reiciendis non aperiam eos incidunt. Magni, animi. Tenetur!
+                        <br />
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi alias perspiciatis quaerat sunt voluptate natus eum pariatur consequatur itaque facilis esse ipsa eius, accusantium laboriosam nesciunt fuga error, ipsam saepe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="vendors/autocomplete/scripts/jquery.mockjax.js"></script>
+    <script type="text/javascript" src="vendors/autocomplete/src/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="vendors/autocomplete/scripts/countries.js"></script>
+    <script type="text/javascript" src="vendors/autocomplete/scripts/demo.js"></script>
+
+    <script>
+        window.document.getElementById("Aereo").style.display = "block";
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body></html>

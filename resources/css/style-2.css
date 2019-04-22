@@ -1,0 +1,488 @@
+/****************************/
+/* IMPORTANT */
+/* COLOR: #95A5A6 | #575757 */
+/****************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    line-height: 145%;
+    word-spacing: 2px;
+    font-family: "Quicksand", sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*--------------------------*/
+/* COMMON */
+/*--------------------------*/
+.description,
+.text-radio,
+.main-nav li a,
+.text-btn,
+.go,
+.back,
+.adult,
+.kids,
+.label-for,
+.title-event {
+    text-transform: uppercase;
+}
+
+.tab-content,
+.description,
+.main-nav li a {
+    color: #fff;
+}
+
+.title-event h2 {
+    font-weight: 300;
+}
+
+/*--------------------------*/
+/* HEAD */
+/*--------------------------*/
+.main-head {
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+        url("img/event.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/event.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*--------------------------*/
+/* NAV */
+/*--------------------------*/
+.logo {
+    width: 350px;
+    padding: 30px;
+    margin: 20px 40px;
+}
+
+.main-nav {
+    height: 50px;
+    background-color: #000;
+    margin-top: 50px;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.nav-left {
+    float: right;
+}
+
+.nav-right {
+    float: left;
+}
+
+.main-nav li {
+    display: inline-block;
+    float: left;
+    margin-top: 50px;
+}
+
+.main-nav li a {
+    padding: 0 20px;
+    font-size: 75%;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 13px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*--------------------------*/
+/* BACKGROUND IMAGE */
+/*--------------------------*/
+.back-img {
+    height: 45vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+        url("img/event.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/event.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/********DESCRIPTION*********/
+.description h1 {
+    font-size: 500%;
+    font-weight: 300;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: none;
+    font-family: 'Lobster', cursive;
+}
+
+.description p {
+    font-size: 80%;
+    padding: 30px;
+    margin-top: 60%;
+}
+
+/**********SEARCH************/
+.tab {
+    width: 100%;
+    margin-top: -80px;
+    padding-left: 30%;
+}
+
+.text-btn {
+    color: #fff;
+    margin-left: -15px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc transparent;
+    border-radius: 10px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.tab button {
+    margin-top: -15px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    color: #575757;
+    cursor: pointer;
+    padding: 14px 16px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #f87500;
+    color: #fff;
+    padding-left: 20px;
+    font-weight: bold;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: #fff;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    border-radius: 10px;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/***********FORM*************/
+.row-form {
+    font-size: 80%;
+}
+
+input[type="radio"] {
+    font-size: 10%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fromto,
+.date-input,
+.adultkids {
+    margin: 0 auto;
+}
+
+.radios,
+.fromto,
+.date-input,
+.adultkids {
+    margin-bottom: 20px;
+}
+
+.adultkids {
+    margin-left: 30px;
+}
+
+.text-radio {
+    margin-left: -15px;
+    font-size: 50%;
+    margin-top: 10px;
+}
+
+.label-for,
+.adult,
+.kids,
+.go,
+.back {
+    font-size: 70%;
+}
+
+.adult,
+.kids,
+.go,
+.back {
+    margin-top: 7px;
+}
+
+.back {
+    margin-left: 5px;
+}
+
+.back-input {
+    margin-left: 5px;
+}
+
+.go-input {
+    margin-left: -10px;
+}
+
+.go-input-input {
+    width: 150px;
+    z-index: 9999;
+}
+
+.go-input-input-2 {
+    width: 150px;
+    z-index: 9999;
+}
+
+.source-input {
+    position: relative;
+    margin-left: -15px;
+}
+
+.source-input-2 {
+    position: relative;
+}
+
+.adult-input {
+    margin-left: -10px;
+    width: 50px;
+}
+
+.kids {
+    margin-left: -25px;
+}
+
+.kids-input {
+    width: 50px;
+    margin-left: -5px;
+}
+
+input {
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.column-for {
+    margin-left: -40px;
+}
+
+.source {
+    position: absolute;
+    z-index: 2;
+    width: 170px;
+    background: #fff;
+}
+
+.source-complete {
+    color: #ccc;
+    width: 170px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.btn-get {
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #f87500;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-get:hover {
+    background-color: #b75600;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*--------------------------*/
+/* THE EVENT */
+/*--------------------------*/
+.event {
+    height: 100vh;
+}
+
+.img-event {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.description-event {
+    position: relative;
+    margin-top: 150px;
+}
+
+.d-event-one {
+    font-family: 'Lobster', cursive;
+    font-size: 700%;
+    margin-top: -65px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.d-event-two {
+    font-family: 'Dancing Script', cursive;
+    font-size: 350%;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 24%;
+    color: #f87500;
+}
+
+.d-event-four {
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 67%;
+    color: #f87500;
+}
+
+.d-event-three p {
+    margin-top: 13%;
+    padding: 50px;
+    text-align: justify;
+    margin-left: 25px;
+    color: #575757;
+}
+
+.title-event h2 {
+    margin-top: 5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    text-transform: none;
+    border-bottom: 3px solid #f87500;
+    padding-bottom: 15px;
+}
+
+
+/*--------------------------*/
+/* THE CITY */
+/*--------------------------*/
+.city {
+    background-color: #f87500;
+    height: 100vh;
+}
+
+.title-event-city h2 {
+    margin-top: 5%;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    text-transform: none;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 15px;
+}
+
+.img-city {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.description-city {
+    position: relative;
+    margin-top: 120px;
+}
+
+.d-city-one {
+    font-family: 'Lobster', cursive;
+    font-size: 700%;
+    margin-top: -65px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.d-city-two {
+    font-family: 'Dancing Script', cursive;
+    font-size: 350%;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 24%;
+    color: #fff;
+}
+
+.d-city-four {
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    position: absolute;
+    margin-top: -8%;
+    margin-left: 67%;
+    color: #fff;
+}
+
+.d-city-three p {
+    margin-top: 13%;
+    padding: 50px;
+    text-align: justify;
+    margin-left: 25px;
+    color: #fff;
+}
